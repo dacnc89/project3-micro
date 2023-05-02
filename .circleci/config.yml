@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          name: "Publish to dockerhub"
           command: |
             docker build -t udagram-api-feed ./udagram-api-feed
             docker tag udagram-api-feed dacnc/udagram-api-feed:v1
