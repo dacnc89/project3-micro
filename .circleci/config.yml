@@ -28,9 +28,9 @@ jobs:
             docker push dacnc/udagram-api-user:v1
 
             docker build -t udagram-frontend ./udagram-frontend
-            docker tag udagram-frontend dacnc/udagram-frontend:v4
+            docker tag udagram-frontend dacnc/udagram-frontend:v5
             echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-            docker push dacnc/udagram-frontend:v4
+            docker push dacnc/udagram-frontend:v5
 
             docker build -t reverseproxy ./udagram-reverseproxy
             docker tag reverseproxy dacnc/reverseproxy:v1
