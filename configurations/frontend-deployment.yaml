@@ -13,7 +13,6 @@ spec:
     metadata:
       labels:
         service: udagram-frontend
-        api: external
     spec:
       containers:
         - image: dacnc/udagram-frontend:v8
