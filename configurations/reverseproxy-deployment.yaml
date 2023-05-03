@@ -15,7 +15,7 @@ spec:
         service: udagram-reverseproxy
     spec:
       containers:
-      - image: dacnc/reverseproxy
+      - image: dacnc/reverseproxy:v1
         name: reverseproxy
         imagePullPolicy: Always
         resources:

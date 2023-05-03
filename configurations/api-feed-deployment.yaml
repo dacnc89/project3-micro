@@ -15,7 +15,7 @@ spec:
         service: udagram-api-feed
     spec:
       containers:
-      - image: dacnc/udagram-api-feed
+      - image: dacnc/udagram-api-feed:v1
         name: udagram-api-feed
         imagePullPolicy: Always
         resources:
