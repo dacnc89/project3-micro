@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config-map
+data:
+  AWS_BUCKET: udagram-projec3
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: testing
+  POSTGRES_DATABASE: postgres
+  POSTGRES_HOST: prj3.c9c121g0w5p1.us-east-1.rds.amazonaws.com
+  POSTGRES_PORT: "5432"
+  URL: localhost:8100
