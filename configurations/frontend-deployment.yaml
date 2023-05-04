@@ -15,9 +15,16 @@ spec:
         service: udagram-frontend
     spec:
       containers:
-        - image: dacnc/udagram-frontend:latest
+        - image: dacnc/udagram-frontend:v8
           name: udagram-frontend
           imagePullPolicy: Always
           ports:
             - containerPort: 80
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "2048Mi"
+              cpu: "500m"
       restartPolicy: Always
