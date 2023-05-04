@@ -15,7 +15,7 @@ spec:
         service: udagram-frontend
     spec:
       containers:
-        - image: dacnc/udagram-frontend:v11
+        - image: dacnc/udagram-frontend:v12
           name: udagram-frontend
           imagePullPolicy: Always
           ports:
