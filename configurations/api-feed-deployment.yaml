@@ -15,14 +15,9 @@ spec:
         service: udagram-api-feed
     spec:
       containers:
-      - image: dacnc/udagram-api-feed:v1
+      - image: dacnc/udagram-api-feed:latest
         name: udagram-api-feed
         imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "64Mi"
-          limits:
-            memory: "2048Mi"
         env:
         - name: URL
           valueFrom:

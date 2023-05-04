@@ -15,14 +15,9 @@ spec:
         service: udagram-reverseproxy
     spec:
       containers:
-      - image: dacnc/udagram-reverseproxy:v1
+      - image: dacnc/udagram-reverseproxy:latest
         name: udagram-reverseproxy
         imagePullPolicy: Always
-        resources:
-          requests:
-            memory: "64Mi"
-          limits:
-            memory: "2048Mi"
         ports:
           - containerPort: 8080      
       restartPolicy: Always
